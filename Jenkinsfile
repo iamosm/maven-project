@@ -5,7 +5,7 @@ agent {
   label 'DevServer'
 } 
 parameters {
-  choice choices: ['dev', 'prod'], name: 'select_environment'
+  choice choices: ['dev', 'prod'], name: 'select_environment'}
 environment {
     NAME = "Shariq"
 }
@@ -51,7 +51,7 @@ stages{
           }
               }
    }
-   stage('deploy_dev')
+   stage('deploy_dev'){
    {
     when { expression {params.select_environment == 'dev'}
     beforeAgent true}
