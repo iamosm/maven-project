@@ -51,7 +51,7 @@ stages{
           }
               }
    }
-   stage('deploy_dev'){
+   stage('deploy_dev')
    {
     when { expression {params.select_environment == 'dev'}
     beforeAgent true}
@@ -69,6 +69,6 @@ stages{
     }
    }
 }
-}
+
 
     
