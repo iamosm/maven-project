@@ -40,11 +40,12 @@ stages{
         }
      }
    } 
+}
    post {
      success {
          archiveArtifacts artifacts: '**/target/*.war'
               }
    }
 }
-}
+
     
