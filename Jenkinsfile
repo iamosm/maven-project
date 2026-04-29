@@ -35,7 +35,7 @@ stages{
         stage('testB')
         {
             steps{
-            echo "This is test B"
+                   echo "This is test B"
             }
         }
      }
